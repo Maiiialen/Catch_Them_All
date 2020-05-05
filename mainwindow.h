@@ -16,6 +16,7 @@
 #include <QTimer>
 #include <QKeyEvent>
 #include <iostream>
+#include <QObject>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,7 +29,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    //void stworz();
+    void stworz();
     bool eventFilter(QObject *target, QEvent *event);
 private:
     Ui::MainWindow *ui;
@@ -43,6 +44,10 @@ private:
     Owoc *owoc5;
     Gracz *gracz;
     QTimer *czas;
-    //QTimer *przerwa;
+    QTimer *czas1;
+    QTimer *przerwa;
+
+public slots:
+    void aktualizacjaPunktow();
 };
 #endif // MAINWINDOW_H

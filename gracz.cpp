@@ -3,6 +3,7 @@
 Gracz::Gracz(QGraphicsScene *_scena)
 {
     scena = _scena;
+    punkty = 0;
     x = -100;
     y = 0;
     predkosc = 10;
@@ -29,19 +30,33 @@ void Gracz::SetX(int kierunek){
     obiekt->setX(x);
 }
 
+void Gracz::boom(){}
+
+int Gracz::getPunkty()
+{
+    return punkty;
+}
+
 
 void Gracz::advance(int phase)
 {
+    Owoc *tym;
     if(phase==0){
         return;
     } else {
-        //qDebug() << collidingItems();
         obiekt->setX(x);
         if (collidingItems().size() > 1){
             qDebug() << collidingItems();
-            //rqDebug() << "Kolizja!";
-            //delete collidingItems().takeAt(0);
-            collidingItems().takeAt(0)->hide();
+            tym = dynamic_cast<Owoc*>(collidingItems().takeAt(0));
+            std::cout << tym << std::endl;
+            if(tym){
+                if(tym->getZderzony() == 0){
+                    punkty+=10;
+                }
+                std::cout << "boom" << std::endl;
+                tym->boom();
+                tym->setZderzony(1);
+            }
         }
     }
 }

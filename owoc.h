@@ -7,15 +7,19 @@
 #include <iostream>
 #include <QDebug>
 
+
 class Owoc:public QGraphicsItem
 {
 public:
     Owoc(QGraphicsScene *_scena);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
+    void boom();
+    void setZderzony(int zd);
+    int getZderzony();
 
 private:
-    int x, y;
+    int x, y, numer, zderzony;
     int predkosc;
     QGraphicsScene *scena;
     QPixmap obrazek;

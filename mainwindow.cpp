@@ -16,8 +16,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     installEventFilter(this);
 
-    kalibracja1 = new ObiektKalibracyjny(Scene, -700, -2000);
-    kalibracja2 = new ObiektKalibracyjny(Scene, 700, 0);
+    kalibracja1 = new ObiektKalibracyjny(Scene, -400, -1200);
+    kalibracja2 = new ObiektKalibracyjny(Scene, 400, 100);
     Scene->addItem(kalibracja1);
     Scene->addItem(kalibracja2);
 
@@ -27,24 +27,28 @@ MainWindow::MainWindow(QWidget *parent)
     gracz->setFocus();
 
     owoc1 = new Owoc(Scene);
-    owoc2 = new Owoc(Scene);
-    owoc3 = new Owoc(Scene);
-    owoc4 = new Owoc(Scene);
-    owoc5 = new Owoc(Scene);
+    //owoc2 = new Owoc(Scene);
+    //owoc3 = new Owoc(Scene);
+    //owoc4 = new Owoc(Scene);
+    //owoc5 = new Owoc(Scene);
     Scene->addItem(owoc1);
-    Scene->addItem(owoc2);
-    Scene->addItem(owoc3);
-    Scene->addItem(owoc4);
-    Scene->addItem(owoc5);
+    //Scene->addItem(owoc2);
+    //Scene->addItem(owoc3);
+    //Scene->addItem(owoc4);
+    //Scene->addItem(owoc5);
 
     czas = new QTimer(this);
     connect(czas, SIGNAL(timeout()), Scene, SLOT(advance()));
 
     //przerwa = new QTimer(this);
-    //connect(przerwa, SIGNAL(timeout()), Scene, SLOT(stworz()));
+    //connect(przerwa, SIGNAL(timeout()), this, SLOT(stworz()));
+
+    czas1 = new QTimer(this);
+    connect(czas1, SIGNAL(timeout()), this, SLOT(aktualizacjaPunktow()));
 
     czas->start(1000/66);
     //przerwa->start(1000);
+    czas1->start(1000/11);
 }
 
 bool MainWindow::eventFilter(QObject *target, QEvent *event){
@@ -62,12 +66,17 @@ bool MainWindow::eventFilter(QObject *target, QEvent *event){
     return QObject::eventFilter(target, event);
 }
 
+void MainWindow::aktualizacjaPunktow()
+{
+    ui->labelWyswietlaczPunkty->setNum(gracz->getPunkty());
+}
+
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-//void MainWindow::stworz(){
-    //Scene->addItem(new Owoc(Scene));
-//}
-
+/*
+void MainWindow::stworz(){
+    Scene->addItem(new Owoc(Scene));
+}
+*/

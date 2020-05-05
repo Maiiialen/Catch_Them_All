@@ -9,7 +9,7 @@ ObiektKalibracyjny::ObiektKalibracyjny(QGraphicsScene *_scena, int _x, int _y)
     obrazek.load(":/image/cherry.png");
     obiekt->setPixmap(obrazek);
     obiekt->setPos(x, y);
-    //obiekt->hide();
+    obiekt->hide();
     scena->addItem(obiekt);
 }
 
