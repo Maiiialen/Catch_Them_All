@@ -48,7 +48,7 @@ void Gracz::advance(int phase)
         if (collidingItems().size() > 1){
             qDebug() << collidingItems();
             tym = dynamic_cast<Owoc*>(collidingItems().takeAt(0));
-            std::cout << tym << std::endl;
+            //std::cout << tym << std::endl;
             if(tym){
                 if(tym->getZderzony() == 0){
                     punkty+=10;
@@ -57,6 +57,15 @@ void Gracz::advance(int phase)
                 tym->boom();
                 tym->setZderzony(1);
             }
+            /*
+            if(dynamic_cast<Owoc*>(collidingItems().takeAt(0))->getZderzony() == 0){
+                punkty+=10;
+            }
+            //std::cout << "boom" << std::endl;
+            dynamic_cast<Owoc*>(collidingItems().takeAt(0))->boom();
+            dynamic_cast<Owoc*>(collidingItems().takeAt(0))->setZderzony(1);
+            std::cout << dynamic_cast<Owoc*>(collidingItems().takeAt(0))->getZderzony() << std::endl;
+            */
         }
     }
 }

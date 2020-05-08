@@ -62,11 +62,12 @@ void Owoc::advance(int phase)
         }
         obiekt->setY(y);
     }
+//    /std::cout << zderzony << std::endl;
 }
 
 void Owoc::boom()
 {
-    /*if(numer==0)
+    if(numer==0)
         obrazek.load(":/image/cherryboom.png");
     else if(numer==1)
         obrazek.load(":/image/appleboom.png");
@@ -76,11 +77,9 @@ void Owoc::boom()
         obrazek.load(":/image/limeboom.png");
     else if(numer==4)
         obrazek.load(":/image/orangeboom.png");
-*/
     if(zderzony==0){
         //zlicz punkty
     }
-    obrazek.load(":/image/appleboom.png");
     obiekt->setPixmap(obrazek);
     predkosc = 20;
 }
