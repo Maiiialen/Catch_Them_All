@@ -1,13 +1,14 @@
 #include "owoc.h"
 
-Owoc::Owoc(QGraphicsScene *_scena)
+Owoc::Owoc(QGraphicsScene *_scena, Gracz *gr)
 {
     scena = _scena;
     obiekt = new QGraphicsPixmapItem();
+    gracz = gr;
 
     numer = rand()%5+0;
     zderzony = 0;
-    x = rand()%299-200;
+    x = rand()%799-400;
     y = rand()%299-1200;
     predkosc = rand()%11+5;
 
@@ -32,7 +33,6 @@ QRectF Owoc::boundingRect() const
     return QRectF(x,y,obrazek.width(),obrazek.height());
 }
 
-//to nie jest nam potrzebne zaimplementowane
 void Owoc::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){}
 
 void Owoc::advance(int phase)
@@ -41,6 +41,15 @@ void Owoc::advance(int phase)
         return;
     } else {
         y += predkosc;
+
+        if(collidesWithItem(gracz)){
+            if(zderzony == 0){
+                gracz->setPunkty(10);
+            }
+            boom();
+            zderzony = 1;
+        }
+
         if(y>=1000){
             zderzony = 0;
             numer = rand()%5+0;
@@ -54,15 +63,14 @@ void Owoc::advance(int phase)
                 obrazek.load(":/image/lime.png");
             else if(numer==4)
                 obrazek.load(":/image/orange.png");
-            x = rand()%399-200;
-            y = rand()%499-900;
+            x = rand()%799-400;
+            y = rand()%299-1200;
             predkosc = rand()%11+5;
             obiekt->setPixmap(obrazek);
             obiekt->setPos(x, y);
         }
         obiekt->setY(y);
     }
-//    /std::cout << zderzony << std::endl;
 }
 
 void Owoc::boom()
@@ -77,9 +85,6 @@ void Owoc::boom()
         obrazek.load(":/image/limeboom.png");
     else if(numer==4)
         obrazek.load(":/image/orangeboom.png");
-    if(zderzony==0){
-        //zlicz punkty
-    }
     obiekt->setPixmap(obrazek);
     predkosc = 20;
 }

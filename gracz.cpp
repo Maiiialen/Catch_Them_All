@@ -7,7 +7,7 @@ Gracz::Gracz(QGraphicsScene *_scena)
     x = -100;
     y = 0;
     predkosc = 10;
-    obrazek.load(":/image/paws&tlate.png");
+    obrazek.load(":/image/paws&tlate2.png");
     obiekt = new QGraphicsPixmapItem();
     obiekt->setPixmap(obrazek);
     obiekt->setPos(x, y);
@@ -37,35 +37,23 @@ int Gracz::getPunkty()
     return punkty;
 }
 
+void Gracz::setPunkty(int liczba)
+{
+    punkty+=liczba;
+}
+
 
 void Gracz::advance(int phase)
 {
-    Owoc *tym;
     if(phase==0){
         return;
     } else {
         obiekt->setX(x);
-        if (collidingItems().size() > 1){
-            qDebug() << collidingItems();
-            tym = dynamic_cast<Owoc*>(collidingItems().takeAt(0));
-            //std::cout << tym << std::endl;
-            if(tym){
-                if(tym->getZderzony() == 0){
-                    punkty+=10;
-                }
-                std::cout << "boom" << std::endl;
-                tym->boom();
-                tym->setZderzony(1);
-            }
-            /*
-            if(dynamic_cast<Owoc*>(collidingItems().takeAt(0))->getZderzony() == 0){
-                punkty+=10;
-            }
-            //std::cout << "boom" << std::endl;
-            dynamic_cast<Owoc*>(collidingItems().takeAt(0))->boom();
-            dynamic_cast<Owoc*>(collidingItems().takeAt(0))->setZderzony(1);
-            std::cout << dynamic_cast<Owoc*>(collidingItems().takeAt(0))->getZderzony() << std::endl;
-            */
-        }
     }
 }
+
+
+
+
+
+

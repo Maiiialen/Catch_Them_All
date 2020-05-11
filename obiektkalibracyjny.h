@@ -19,9 +19,6 @@ private:
     QGraphicsScene *scena;
     QGraphicsPixmapItem *obiekt;
     QPixmap obrazek;
-
-//protected slots:
-//    void advance(int phase) override;
 };
 
 #endif // OBIEKTKALIBRACYJNY_H

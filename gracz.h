@@ -6,9 +6,7 @@
 #include <QGraphicsPixmapItem>
 #include <QKeyEvent>
 #include <iostream>
-#include <iostream>
 #include <QDebug>
-#include "owoc.h"
 
 class Gracz:public QGraphicsItem, public QObject
 {
@@ -19,6 +17,7 @@ public:
     void SetX(int kierunek);
     void boom();
     int getPunkty();
+    void setPunkty(int liczba);
 
 private:
     int x, y;

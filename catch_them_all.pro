@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,16 +21,19 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     obiektkalibracyjny.cpp \
-    owoc.cpp
+    owoc.cpp \
+    szukaj.cpp
 
 HEADERS += \
     gracz.h \
     mainwindow.h \
     obiektkalibracyjny.h \
-    owoc.h
+    owoc.h \
+    szukaj.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    szukaj.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

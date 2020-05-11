@@ -1,17 +1,14 @@
 #ifndef OWOC_H
 #define OWOC_H
 
-#include <QGraphicsItem>
-#include <QGraphicsScene>
 #include <cstdlib>
-#include <iostream>
-#include <QDebug>
+#include "gracz.h"
 
 
 class Owoc:public QGraphicsItem
 {
 public:
-    Owoc(QGraphicsScene *_scena);
+    Owoc(QGraphicsScene *_scena, Gracz *gr);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
     void boom();
@@ -24,6 +21,7 @@ private:
     QGraphicsScene *scena;
     QPixmap obrazek;
     QGraphicsPixmapItem *obiekt;
+    Gracz *gracz;
 
 protected slots:
     void advance(int phase) override;

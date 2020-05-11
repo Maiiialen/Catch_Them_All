@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "szukaj.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     installEventFilter(this);
 
     kalibracja1 = new ObiektKalibracyjny(Scene, -400, -1200);
-    kalibracja2 = new ObiektKalibracyjny(Scene, 400, 100);
+    kalibracja2 = new ObiektKalibracyjny(Scene, 400, -50);
     Scene->addItem(kalibracja1);
     Scene->addItem(kalibracja2);
 
@@ -26,16 +27,16 @@ MainWindow::MainWindow(QWidget *parent)
     gracz->setFlag(QGraphicsItem::ItemIsFocusable);
     gracz->setFocus();
 
-    owoc1 = new Owoc(Scene);
-    //owoc2 = new Owoc(Scene);
-    //owoc3 = new Owoc(Scene);
-    //owoc4 = new Owoc(Scene);
-    //owoc5 = new Owoc(Scene);
+    owoc1 = new Owoc(Scene, gracz);
+    owoc2 = new Owoc(Scene, gracz);
+    owoc3 = new Owoc(Scene, gracz);
+    owoc4 = new Owoc(Scene, gracz);
+    owoc5 = new Owoc(Scene, gracz);
     Scene->addItem(owoc1);
-    //Scene->addItem(owoc2);
-    //Scene->addItem(owoc3);
-    //Scene->addItem(owoc4);
-    //Scene->addItem(owoc5);
+    Scene->addItem(owoc2);
+    Scene->addItem(owoc3);
+    Scene->addItem(owoc4);
+    Scene->addItem(owoc5);
 
     czas = new QTimer(this);
     connect(czas, SIGNAL(timeout()), Scene, SLOT(advance()));
@@ -69,6 +70,7 @@ bool MainWindow::eventFilter(QObject *target, QEvent *event){
 void MainWindow::aktualizacjaPunktow()
 {
     ui->labelWyswietlaczPunkty->setNum(gracz->getPunkty());
+
 }
 
 MainWindow::~MainWindow()
@@ -80,3 +82,10 @@ void MainWindow::stworz(){
     Scene->addItem(new Owoc(Scene));
 }
 */
+
+void MainWindow::on_pushButtonSzukaj_clicked()
+{
+    Szukaj Okno;
+    Okno.setModal(true);
+    Okno.exec();
+}

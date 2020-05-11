@@ -10,7 +10,7 @@
 #include <QGraphicsView>
 #include <QApplication>
 
-#include "gracz.h"
+//#include "gracz.h"
 #include "owoc.h"
 #include "obiektkalibracyjny.h"
 #include <QTimer>
@@ -49,5 +49,7 @@ private:
 
 public slots:
     void aktualizacjaPunktow();
+private slots:
+    void on_pushButtonSzukaj_clicked();
 };
 #endif // MAINWINDOW_H
