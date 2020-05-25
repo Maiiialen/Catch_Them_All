@@ -5,18 +5,16 @@
 #include <QGraphicsScene>
 #include <QImage>
 #include <QPixmap>
-
-#include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QApplication>
-
-//#include "gracz.h"
-#include "owoc.h"
-#include "obiektkalibracyjny.h"
 #include <QTimer>
 #include <QKeyEvent>
 #include <iostream>
 #include <QObject>
+#include "owoc.h"
+#include "obiektkalibracyjny.h"
+#include "szukaj.h"
+//#include "gracz.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,8 +27,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void stworz();
-    bool eventFilter(QObject *target, QEvent *event);
+    //bool eventFilter(QObject *target, QEvent *event);
+
 private:
     Ui::MainWindow *ui;
     QPixmap pixmapObject;
@@ -45,11 +43,12 @@ private:
     Gracz *gracz;
     QTimer *czas;
     QTimer *czas1;
-    QTimer *przerwa;
+    Szukaj *Okno;
 
 public slots:
     void aktualizacjaPunktow();
-private slots:
     void on_pushButtonSzukaj_clicked();
+    void on_pushButtonStartGry_clicked();
+    void odebranieDanych(int x);
 };
 #endif // MAINWINDOW_H

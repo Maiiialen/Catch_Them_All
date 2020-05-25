@@ -1,7 +1,6 @@
 #include "owoc.h"
 
-Owoc::Owoc(QGraphicsScene *_scena, Gracz *gr)
-{
+Owoc::Owoc(QGraphicsScene *_scena, Gracz *gr) {
     scena = _scena;
     obiekt = new QGraphicsPixmapItem();
     gracz = gr;
@@ -28,15 +27,13 @@ Owoc::Owoc(QGraphicsScene *_scena, Gracz *gr)
     scena->addItem(obiekt);
 }
 
-QRectF Owoc::boundingRect() const
-{
+QRectF Owoc::boundingRect() const {
     return QRectF(x,y,obrazek.width(),obrazek.height());
 }
 
 void Owoc::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){}
 
-void Owoc::advance(int phase)
-{
+void Owoc::advance(int phase) {
     if(phase==0){
         return;
     } else {
@@ -73,8 +70,7 @@ void Owoc::advance(int phase)
     }
 }
 
-void Owoc::boom()
-{
+void Owoc::boom() {
     if(numer==0)
         obrazek.load(":/image/cherryboom.png");
     else if(numer==1)
@@ -89,12 +85,10 @@ void Owoc::boom()
     predkosc = 20;
 }
 
-void Owoc::setZderzony(int zd)
-{
+void Owoc::setZderzony(int zd) {
     zderzony = zd;
 }
 
-int Owoc::getZderzony()
-{
+int Owoc::getZderzony() {
     return zderzony;
 }

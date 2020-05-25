@@ -5,8 +5,7 @@
 #include "gracz.h"
 
 
-class Owoc:public QGraphicsItem
-{
+class Owoc:public QGraphicsItem {
 public:
     Owoc(QGraphicsScene *_scena, Gracz *gr);
     QRectF boundingRect() const override;

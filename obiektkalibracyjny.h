@@ -7,8 +7,7 @@
 #include <iostream>
 
 
-class ObiektKalibracyjny: public QGraphicsItem
-{
+class ObiektKalibracyjny: public QGraphicsItem {
 public:
     ObiektKalibracyjny(QGraphicsScene *_scena, int _x, int _y);
     QRectF boundingRect() const override;

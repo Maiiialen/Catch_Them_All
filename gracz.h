@@ -8,26 +8,31 @@
 #include <iostream>
 #include <QDebug>
 
-class Gracz:public QGraphicsItem, public QObject
+class Gracz:public QObject, public QGraphicsItem
 {
 public:
     Gracz(QGraphicsScene *_scena);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
-    void SetX(int kierunek);
+    void SetX();
     void boom();
     int getPunkty();
     void setPunkty(int liczba);
+    void setPredkosc();
+    void setAccX(int liczba);
+    int getAccX();
 
 private:
     int x, y;
+    int AccX;
     int predkosc;
+    int kierunek;
     int punkty;
     QGraphicsScene *scena;
     QPixmap obrazek;
     QGraphicsPixmapItem *obiekt;
 
-protected slots:
+public slots:
     void advance(int phase) override;
 };
 

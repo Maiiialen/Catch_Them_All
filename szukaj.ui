@@ -23,7 +23,7 @@
       </sizepolicy>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
@@ -83,7 +83,7 @@
       </sizepolicy>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="0" column="0">
@@ -108,7 +108,7 @@
       </sizepolicy>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="1">
