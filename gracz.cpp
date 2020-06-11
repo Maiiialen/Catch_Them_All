@@ -23,11 +23,16 @@ void Gracz::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
 
 void Gracz::SetX() {
     if (kierunek==1){
-        qDebug() << predkosc;
+        //qDebug() << predkosc;
         x+=predkosc;
     } else {
-        qDebug() << predkosc;
+        //qDebug() << predkosc;
         x-=predkosc;
+    }
+    if(x < -600) {
+        x = -600;
+    } else if(x > 250) {
+        x = 250;
     }
     obiekt->setX(x);
 }
@@ -67,7 +72,7 @@ void Gracz::advance(int phase) {
         return;
     } else {
         setPredkosc();
-        qDebug() << x;
+        //qDebug() << x;
         SetX();
     }
 }

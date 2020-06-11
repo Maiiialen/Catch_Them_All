@@ -1,0 +1,5 @@
+<map id="Szukaj::stan" name="Szukaj::stan">
+<area shape="rect" id="node1" title="Funkcja obsługująca pasek stanu." alt="" coords="257,46,352,73"/>
+<area shape="rect" id="node2" href="$class_szukaj.html#a17ee65b6aee165f7f3b210e7d926ab44" title="Funkcja obsługująca wciśnięcie przycisku ,,Połącz&#39;&#39;." alt="" coords="9,5,206,47"/>
+<area shape="rect" id="node3" href="$class_szukaj.html#aca97f720e8b1368d525e926bc312492d" title="Funkcja obsługująca wciśnięcie przycisku ,,Rozłącz&#39;&#39;." alt="" coords="5,71,209,112"/>
+</map>

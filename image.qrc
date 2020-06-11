@@ -13,5 +13,28 @@
         <file>orangeboom.png</file>
         <file>paws&amp;tlate1.png</file>
         <file>paws&amp;tlate2.png</file>
+        <file>apple1.png</file>
+        <file>apple2.png</file>
+        <file>apple3.png</file>
+        <file>apple4.png</file>
+        <file>banana1.png</file>
+        <file>banana2.png</file>
+        <file>banana3.png</file>
+        <file>banana4.png</file>
+        <file>cherry1.png</file>
+        <file>cherry2.png</file>
+        <file>cherry3.png</file>
+        <file>cherry4.png</file>
+        <file>lime1.png</file>
+        <file>lime2.png</file>
+        <file>lime3.png</file>
+        <file>lime4.png</file>
+        <file>orange1.png</file>
+        <file>orange2.png</file>
+        <file>orange3.png</file>
+        <file>orange4.png</file>
+        <file>tlo.png</file>
+        <file>tlo1.png</file>
+        <file>tlo2.png</file>
     </qresource>
 </RCC>

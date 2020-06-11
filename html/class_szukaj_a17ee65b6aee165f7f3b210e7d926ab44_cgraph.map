@@ -1,0 +1,8 @@
+<map id="Szukaj::on_pushButtonPolacz_clicked" name="Szukaj::on_pushButtonPolacz_clicked">
+<area shape="rect" id="node1" title="Funkcja obsługująca wciśnięcie przycisku ,,Połącz&#39;&#39;." alt="" coords="5,23,203,65"/>
+<area shape="rect" id="node2" href="$class_szukaj.html#a8da84e52e9d0c5ad2719f47cd517a4b7" title="Funkcja obsługująca wypisywanie w logu." alt="" coords="465,5,599,32"/>
+<area shape="rect" id="node3" href="$class_szukaj.html#aaec9a64abfc007df0c8e9705b37ee9a0" title="Funkcja obsługująca zczytywanie danych z portu." alt="" coords="251,56,400,83"/>
+<area shape="rect" id="node4" href="$class_szukaj.html#a4e73c775916225788ddfe3a98761a068" title="Funkcja sprawdzająca poprawność sumy kontrolnej." alt="" coords="448,56,616,83"/>
+<area shape="rect" id="node5" href="$class_szukaj.html#aefceb348744912b9ee6c786ccf7c384d" title="Funkcja licząca sumę kontrolną" alt="" coords="664,56,833,83"/>
+<area shape="rect" id="node6" href="$class_szukaj.html#ab4a02448efbda9fb80006c450f8efd47" title="Funkcja licząca sumę kontrolną" alt="" coords="881,56,1056,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="MainWindow::odebranieDanych" name="MainWindow::odebranieDanych">
+<area shape="rect" id="node1" title="Funkcja obsługująca przesyłanie danych pobranych z czunika." alt="" coords="5,5,209,32"/>
+<area shape="rect" id="node2" href="$class_gracz.html#acd85ab57208f4e65d034ca28ed8af567" title="Funkcja zapisująca ostatnią odczytaną wartość z czujnika." alt="" coords="257,5,371,32"/>
+</map>

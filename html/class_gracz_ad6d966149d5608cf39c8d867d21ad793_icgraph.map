@@ -1,0 +1,4 @@
+<map id="Gracz::SetX" name="Gracz::SetX">
+<area shape="rect" id="node1" title="Funkcja ustawiająca współrzędną OX." alt="" coords="165,5,257,32"/>
+<area shape="rect" id="node2" href="$class_gracz.html#a479780df186c43e24b40fe93d6b2c550" title="Funkcja aktualizująca dane w obiekcie." alt="" coords="5,5,117,32"/>
+</map>

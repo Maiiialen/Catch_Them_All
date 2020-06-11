@@ -1,0 +1,7 @@
+<map id="Szukaj::addToLogs" name="Szukaj::addToLogs">
+<area shape="rect" id="node1" title="Funkcja obsługująca wypisywanie w logu." alt="" coords="503,75,636,102"/>
+<area shape="rect" id="node2" href="$class_szukaj.html#a17ee65b6aee165f7f3b210e7d926ab44" title="Funkcja obsługująca wciśnięcie przycisku ,,Połącz&#39;&#39;." alt="" coords="5,68,203,109"/>
+<area shape="rect" id="node3" href="$class_szukaj.html#aca97f720e8b1368d525e926bc312492d" title="Funkcja obsługująca wciśnięcie przycisku ,,Rozłącz&#39;&#39;." alt="" coords="251,34,455,76"/>
+<area shape="rect" id="node4" href="$class_szukaj.html#a4eb130a5fbdc5e62c580c7dc8e8d8064" title="Funkcja obsługująca wciśnięcie przycisku ,,Szukaj&#39;&#39;." alt="" coords="259,100,446,141"/>
+<area shape="rect" id="node5" href="$class_szukaj.html#aaec9a64abfc007df0c8e9705b37ee9a0" title="Funkcja obsługująca zczytywanie danych z portu." alt="" coords="278,166,427,192"/>
+</map>

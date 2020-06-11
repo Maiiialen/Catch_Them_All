@@ -1,0 +1,5 @@
+<map id="Gracz::setAccX" name="Gracz::setAccX">
+<area shape="rect" id="node1" title="Funkcja zapisująca ostatnią odczytaną wartość z czujnika." alt="" coords="484,5,597,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a75c24aec9a4a349208a89d3a8b4dff91" title="Funkcja obsługująca przesyłanie danych pobranych z czunika." alt="" coords="232,5,436,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor klasy." alt="" coords="5,5,184,32"/>
+</map>

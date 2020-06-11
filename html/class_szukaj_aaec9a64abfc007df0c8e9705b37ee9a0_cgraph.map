@@ -1,0 +1,7 @@
+<map id="Szukaj::readFromPort" name="Szukaj::readFromPort">
+<area shape="rect" id="node1" title="Funkcja obsługująca zczytywanie danych z portu." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="node2" href="$class_szukaj.html#a8da84e52e9d0c5ad2719f47cd517a4b7" title="Funkcja obsługująca wypisywanie w logu." alt="" coords="220,5,353,32"/>
+<area shape="rect" id="node3" href="$class_szukaj.html#a4e73c775916225788ddfe3a98761a068" title="Funkcja sprawdzająca poprawność sumy kontrolnej." alt="" coords="203,56,371,83"/>
+<area shape="rect" id="node4" href="$class_szukaj.html#aefceb348744912b9ee6c786ccf7c384d" title="Funkcja licząca sumę kontrolną" alt="" coords="419,56,588,83"/>
+<area shape="rect" id="node5" href="$class_szukaj.html#ab4a02448efbda9fb80006c450f8efd47" title="Funkcja licząca sumę kontrolną" alt="" coords="636,56,811,83"/>
+</map>

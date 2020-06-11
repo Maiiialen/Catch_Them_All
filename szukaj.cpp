@@ -1,9 +1,7 @@
 #include "szukaj.h"
 #include "ui_szukaj.h"
 
-Szukaj::Szukaj(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Szukaj) {
+Szukaj::Szukaj(QWidget *parent): QDialog(parent), ui(new Ui::Szukaj) {
     ui->setupUi(this);
     this->device = new QSerialPort(this);
 }
@@ -48,7 +46,7 @@ void Szukaj::on_pushButtonPolacz_clicked() {
 
           this->addToLogs("Otwarto port szeregowy.");
           connect(this->device, SIGNAL(readyRead()), this, SLOT(readFromPort()));
-          //connect(this->device, SIGNAL(readyRead()), this, SLOT(readFromPort()));
+          this->stan(1);
         } else {
           this->addToLogs("Otwarcie portu szeregowego się nie powiodło!");
         }
@@ -62,6 +60,7 @@ void Szukaj::on_pushButtonRozlacz_clicked() {
     if(this->device->isOpen()) {
       this->device->close();
       this->addToLogs("Zamknięto połączenie.");
+      this->stan(0);
     } else {
       this->addToLogs("Port nie jest otwarty!");
       return;
@@ -79,15 +78,6 @@ void Szukaj::readFromPort() {
 
     this->addToLogs(line.left(pos));    //line.left(pos) - użyć do funkcji dalej
     ParseDataFrame(line.left(pos).toStdString());
-  }
-}
-
-void Szukaj::sendMessageToDevice(QString message) {
-  if(this->device->isOpen() && this->device->isWritable()) {
-    this->addToLogs("Wysyłam informacje do urządzenia " + message);
-    this->device->write(message.toStdString().c_str());
-  } else {
-    this->addToLogs("Nie mogę wysłać wiadomości. Port nie jest otwarty!");
   }
 }
 

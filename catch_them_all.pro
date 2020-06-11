@@ -1,5 +1,6 @@
 QT       += core gui
 QT       += serialport
+QT       += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,18 +23,21 @@ SOURCES += \
     mainwindow.cpp \
     obiektkalibracyjny.cpp \
     owoc.cpp \
-    szukaj.cpp
+    szukaj.cpp \
+    wynik.cpp
 
 HEADERS += \
     gracz.h \
     mainwindow.h \
     obiektkalibracyjny.h \
     owoc.h \
-    szukaj.h
+    szukaj.h \
+    wynik.h
 
 FORMS += \
     mainwindow.ui \
-    szukaj.ui
+    szukaj.ui \
+    wynik.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -43,4 +47,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     image.qrc
 
-DISTFILES +=
+
