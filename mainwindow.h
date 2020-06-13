@@ -46,7 +46,7 @@ public:
     /*!
     * \brief Destruktor klasy
     *
-    * Destruktor klasy
+    * Destruktor klasy MainwWndow
     */
     ~MainWindow();
 
@@ -137,15 +137,15 @@ private:
     * \brief Ilość zapisanych pomiarów
     *
     * Ilość zapisanych wartości pomiarowych z
-    * czujnika, wykorzystywanych do wyświetlenia
-    * na wykresie
+    * czujnika, wykorzystywanych do wyświetlenia na wykresie
     */
     int pomiary;
     /*!
     * \brief Zmienna określająca czy gra już się zaczęła
     *
     * Zmienna określająca czy gra już się zaczęła,
-    * wykorzystywana do zabezpieczenia przed restartem w trakcie gry
+    * wykorzystywana do zabezpieczenia przed restartem w trakcie gry,
+    * przyjmuje wartości 0 lub 1
     */
     int czyBylStart;
     /*!
@@ -203,6 +203,7 @@ public slots:
     * Funkcja odpowiadająca za przesłanie wartości odebranych z
     * czujnika oraz przekonwertowaie ich na wartości rzeczywiste
     * mozliwe do wyświelenia na wykresie
+    * \param[in] x - wartość pobrana z czujnika
     */
     void odebranieDanych(int x);
     /*!
@@ -210,6 +211,7 @@ public slots:
     *
     * Funkcja odpowiadajaca za pasek stanu ukazujący czy
     * nawiązana jest komunikacja z czujnikiem
+    * \param[in] czyWlaczone - wartość 0 lub 1 oznaczająca czy połączenie z czujnikiem jest nawiązane
     */
     void Stan(int czyWlaczone);
 };

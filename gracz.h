@@ -14,7 +14,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QGraphicsPixmapItem>
-#include <QKeyEvent>
+//#include <QKeyEvent>
 #include <iostream>
 #include <QDebug>
 
@@ -24,9 +24,20 @@ public:
     * \brief Kontruktor klasy
     *
     * Funkcja inicjalizuje zmienne w obiekcie gracza
+    * \param[in] *_scena - wskaźnik na scenę, na której ma pojawić się obiekt
     */
     Gracz(QGraphicsScene *_scena);
+    /*!
+    * \brief Tworzy prostokąt ograniczjący obiekt
+    *
+    * Funkcja inicjalizuje prostokąd ograniczjący obiekt.
+    */
     QRectF boundingRect() const override;
+    /*!
+    * \brief Funkcja rysująca obiekt na ekranie
+    *
+    * Nieużywana funkcja rysujaca obiekt na ekranie
+    */
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
     /*!
     * \brief Funkcja ustawiająca współrzędną OX
@@ -37,7 +48,7 @@ public:
     /*!
     * \brief Funkcja obsługująca zderzenie
     *
-    * Funkcja obsługująca zderzenie
+    * Funkcja obsługująca zderzenie w obiekcie gracza
     */
     void boom();
     /*!
@@ -54,6 +65,7 @@ public:
     *
     * Funkcja ustawia wartość zmiennej
     * przechowującej ilość zdobytych punktów
+    * \param[in] liczba - wartość na jaką ustawiona ma być liczba zdobytych punktów
     */
     void setPunkty(int liczba);
     /*!
@@ -67,6 +79,7 @@ public:
     *
     * Funkcja ustawia wartość zmiennej przechowującej
     * wartość pobraną z czunjnika
+    * \param[in] liczba - nowa wartość pobrana z czujnika
     */
     void setAccX(int liczba);
     /*!
@@ -83,44 +96,44 @@ private:
     /*!
     * \brief Współrzędna na osi OX
     *
-    * Współrzędna na osi OX
-    * Wartość zmieniana przy ruchu obiektu
+    * Współrzędna na osi OX, wartość zmieniana przy ruchu obiektu,
+    * jednostką jest piksel
     */
     int x;
     /*!
     * \brief Współrzędna na osi OY
     *
-    * Współrzędna na osi OY
-    * Wartość niezmienna
+    * Współrzędna na osi OY, wartość niezmienna,
+    * jednostką jest piksel
     */
     int y;
     /*!
     * \brief Wartość odchylenia
     *
-    * Wartość odchylenia, zczytana
-    * z czujnika, wartość wyrażona
-    * w jednostkach niemiarowych.
+    * Wartość odchylenia, zczytana z czujnika, wartość wyrażona
+    * w jednostkach niemiarowych, wartość nie rzeczywista
     */
     int AccX;
     /*!
     * \brief Wartość prędkości obiektu
     *
     * Wartość chwilowej prędkości obiektu
-    * zmieniana na podstawie odchylenia czujnika
+    * zmieniana na podstawie odchylenia czujnika,
+    * jednostką jest piksel na sekundę
     */
     int predkosc;
     /*!
     * \brief Kierunek ruchu
     *
     * Wartość odzwierciedlająca kierunek ruchu
-    * obiektu, zmieniana na podstawie danych z czujnika
+    * obiektu, zmieniana na podstawie danych z czujnika,
+    * przyjmuje wartości 0 lub 1
     */
     int kierunek;
     /*!
     * \brief Punkty uzyskane w grze
     *
-    * Wartość odzwierciedlająca ilość
-    * zdobytych punktów
+    * Wartość odzwierciedlająca ilość zdobytych punktów
     */
     int punkty;
     /*!
@@ -149,6 +162,7 @@ public slots:
     *
     * Funkcja aktualizująca dane w obiekcie z częstotliwością
     * zmiennej czasowe z którą jest połączona
+    * \param[in] phase - faza aktualizacji
     */
     void advance(int phase) override;
 };

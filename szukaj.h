@@ -41,7 +41,7 @@ public:
     /*!
     * \brief Destruktor klasy
     *
-    * Destruktor klasy
+    * Destruktor klasy szukaj
     */
     ~Szukaj();
 
@@ -68,6 +68,7 @@ private slots:
     * \brief Funkcja obsługująca wypisywanie w logu
     *
     * Funkcja odsługująca wypisywanie w logu
+    * \param[in] message - napis, który ma zostać wypisany do logu
     */
     void addToLogs(QString message);
     /*!
@@ -81,18 +82,21 @@ private slots:
     * \brief Funkcja licząca sumę kontrolną
     *
     * Funkcja licząca sumę kontrolną
+    * \param[in] *Data -
     */
     unsigned int CRC8_SingleByte(unsigned int Data);
     /*!
     * \brief Funkcja licząca sumę kontrolną
     *
     * Funkcja licząca sumę kontrolną
+    * \param[in] *pData -
     */
     byte CRC8_DataArray(byte *pData);
     /*!
     * \brief Funkcja sprawdzająca poprawność sumy kontrolnej
     *
     * Funkcja sprawdzająca poprawność sumy kontrolnej
+    * \param[in] pDataFrame - ramka danych
     */
     bool ParseDataFrame(std::string pDataFrame);
 
@@ -103,6 +107,7 @@ signals:
     * Funkcja odpowiadająca za przesłanie wartości odebranych z
     * czujnika oraz przekonwertowaie ich na wartości rzeczywiste
     * mozliwe do wyświelenia na wykresie
+    * \param[in] x - wartość pobrana z czujnika
     */
     void otrzymanieDanych(int x);
     /*!
@@ -110,6 +115,7 @@ signals:
     *
     * Funkcja odpowiadajaca za pasek stanu ukazujący czy
     * nawiązana jest komunikacja z czujnikiem
+    * \param[in] czyWlaczone - wartośc określająca czy nawiązane jest połączenie z czujnikiem
     */
     void stan(int czyWlaczone);
 

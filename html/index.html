@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Main Page</title>
+<title>Catch Them All: Gra Catch Them All</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="paws.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Catch Them All
    </div>
   </td>
  </tr>
@@ -80,11 +81,32 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">My Project Documentation</div>  </div>
+<div class="title">Gra Catch Them All </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Magdalena Sałęga</dd></dl>
+<p>Finalnym produktem jest gra, w której należy poruszać się na boki i łapać spadające obiekty.</p>
+<h1><a class="anchor" id="Sterowanie"></a>
+Sterowanie</h1>
+<p>Sterowanie ruchem obiektu gracza odbywa się poprzez poruszanie płytką z akcelerometrem. <br  />
+Kąt odchylenia płytki wpływa na prędkość poruszania się gracza na ekranie. <br  />
+Dane pobierane z czujnika konwertowane są w programie aplikacji na prędkość obiektu gracza z pomocą funkcji liniowej. <br  />
+Ruch ten jest też zależny od kierunku wychylenia akcelerometru. <br  />
+ </p>
+<h1><a class="anchor" id="Kominikacja"></a>
+Kominikacja</h1>
+<p>Zaimplementowana została komunikacja mikrokontrolera z aplikacją. Dane odebrane z mikrokontrolera przesyłane są do aplikacji wykorzystując ramkę danych. <br  />
+Zaimplementowane zostały funkcje sumy kontrolnej w programie mikrokontrolera oraz w aplikacji, gdzie sprawdzana jest poprawność przesłanych danych. <br  />
+ </p>
+<h1><a class="anchor" id="Grafika"></a>
+Grafika</h1>
+<p>Aplikacja składa się z trzech okien: głównego, łączenia oraz końca gry. <br  />
+Wykorzystane zostały obrazki łapek kota, talerza oraz 5 owoców aby urozmaicić grafikę w grze. <br  />
+W tle również znajduje się obrazek nawiązujący tematyką do jedzenia. <br  />
+</p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -23,9 +23,22 @@ public:
     * \brief Konstruktor klasy
     *
     * Funkcja inicjalizuje zmienne
+    * \param[in] *_scena - wskaźnik na scenę, na której ma pojawić się obiekt
+    * \param[in] _x - początkowa współrzędna na osi OX
+    * \param[in] _y - początkowa współrzędna na osi OY
     */
     ObiektKalibracyjny(QGraphicsScene *_scena, int _x, int _y);
+    /*!
+    * \brief Tworzy prostokąt ograniczjący obiekt
+    *
+    * Funkcja inicjalizuje prostokąd ograniczjący obiekt.
+    */
     QRectF boundingRect() const override;
+    /*!
+    * \brief Funkcja rysująca obiekt na ekranie
+    *
+    * Nieużywana funkcja rysujaca obiekt na ekranie
+    */
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
 
 private:
@@ -33,14 +46,16 @@ private:
     * \brief Zmienna określająca położenie na osi OX
     *
     * Zmienna określająca położenie na osi OX obiektu
-    * który nie zmienia położenia
+    * który nie zmienia położenia,
+    * jednostką jest piksel
     */
     int x;
     /*!
     * \brief Zmienna określająca położenie na osi OY
     *
     * Zmienna określająca położenie na osi OY obiektu
-    * który nie zmienia położenia
+    * który nie zmienia położenia,
+    * jednostką jest piksel
     */
     int y;
     /*!

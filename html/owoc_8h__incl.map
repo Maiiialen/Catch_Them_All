@@ -1,12 +1,11 @@
 <map id="owoc.h" name="owoc.h">
-<area shape="rect" id="node1" title="Definicja klasy Owoc." alt="" coords="311,5,373,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="223,80,283,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="307,80,377,107"/>
-<area shape="rect" id="node4" href="$gracz_8h.html" title="Definicja klasy Gracz." alt="" coords="401,80,467,107"/>
+<area shape="rect" id="node1" title="Definicja klasy Owoc." alt="" coords="239,5,301,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="151,80,211,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="235,80,305,107"/>
+<area shape="rect" id="node4" href="$gracz_8h.html" title="Definicja klasy Gracz." alt="" coords="329,80,395,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,155,127,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="151,155,261,181"/>
 <area shape="rect" id="node7" title=" " alt="" coords="285,155,439,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="463,155,549,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="574,155,646,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="670,155,739,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="463,155,535,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="559,155,629,181"/>
 </map>

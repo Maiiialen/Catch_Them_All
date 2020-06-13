@@ -24,7 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "Catch Them All", "index.html", [
+    [ "Gra Catch Them All", "index.html", [
+      [ "Sterowanie", "index.html#Sterowanie", null ],
+      [ "Kominikacja", "index.html#Kominikacja", null ],
+      [ "Grafika", "index.html#Grafika", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

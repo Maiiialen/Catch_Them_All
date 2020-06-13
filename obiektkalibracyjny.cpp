@@ -5,7 +5,7 @@ ObiektKalibracyjny::ObiektKalibracyjny(QGraphicsScene *_scena, int _x, int _y) {
     x = _x;
     y = _y;
     obiekt = new QGraphicsPixmapItem();
-    obrazek.load(":/image/tlo2.png");
+    obrazek.load(":/image/tlo.png");
     obrazek = obrazek.scaled(2000,900, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     obiekt->setPixmap(obrazek);
     obiekt->setPos(x, y);

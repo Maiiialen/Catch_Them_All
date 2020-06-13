@@ -39,6 +39,7 @@ public:
     *
     * Funkcja uaktualniająca zmienną zawierającą
     * informację o ilości zdobytych punktów
+    * \param[in] wartość - wartość określająca ilość zdobytych punktów
     */
     void setWynik(int wartosc);
 

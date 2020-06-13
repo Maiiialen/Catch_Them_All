@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: ObiektKalibracyjny Class Reference</title>
+<title>Catch Them All: ObiektKalibracyjny Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="paws.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Catch Them All
    </div>
   </td>
  </tr>
@@ -118,8 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a003892f6d32bc7c3dedb3b77ce9cc31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy.  <a href="class_obiekt_kalibracyjny.html#a003892f6d32bc7c3dedb3b77ce9cc31d">More...</a><br /></td></tr>
 <tr class="separator:a003892f6d32bc7c3dedb3b77ce9cc31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec53d723c5419e58fe2acc7b64a2634"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt_kalibracyjny.html#a1ec53d723c5419e58fe2acc7b64a2634">boundingRect</a> () const override</td></tr>
+<tr class="memdesc:a1ec53d723c5419e58fe2acc7b64a2634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy prostokąt ograniczjący obiekt.  <a href="class_obiekt_kalibracyjny.html#a1ec53d723c5419e58fe2acc7b64a2634">More...</a><br /></td></tr>
 <tr class="separator:a1ec53d723c5419e58fe2acc7b64a2634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dbb9414c1c4ab1930dcd9626eb3509e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt_kalibracyjny.html#a0dbb9414c1c4ab1930dcd9626eb3509e">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget=nullptr) override</td></tr>
+<tr class="memdesc:a0dbb9414c1c4ab1930dcd9626eb3509e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rysująca obiekt na ekranie.  <a href="class_obiekt_kalibracyjny.html#a0dbb9414c1c4ab1930dcd9626eb3509e">More...</a><br /></td></tr>
 <tr class="separator:a0dbb9414c1c4ab1930dcd9626eb3509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -174,7 +177,14 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Konstruktor klasy. </p>
-<p>Funkcja inicjalizuje zmienne </p>
+<p>Funkcja inicjalizuje zmienne </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*_scena</td><td>- wskaźnik na scenę, na której ma pojawić się obiekt </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_x</td><td>- początkowa współrzędna na osi OX </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_y</td><td>- początkowa współrzędna na osi OY </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -201,6 +211,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Tworzy prostokąt ograniczjący obiekt. </p>
+<p>Funkcja inicjalizuje prostokąd ograniczjący obiekt. </p>
 
 </div>
 </div>
@@ -243,6 +256,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Funkcja rysująca obiekt na ekranie. </p>
+<p>Nieużywana funkcja rysujaca obiekt na ekranie </p>
 
 </div>
 </div>
@@ -343,7 +359,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Zmienna określająca położenie na osi OX. </p>
-<p>Zmienna określająca położenie na osi OX obiektu który nie zmienia położenia </p>
+<p>Zmienna określająca położenie na osi OX obiektu który nie zmienia położenia, jednostką jest piksel </p>
 
 </div>
 </div>
@@ -368,7 +384,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Zmienna określająca położenie na osi OY. </p>
-<p>Zmienna określająca położenie na osi OY obiektu który nie zmienia położenia </p>
+<p>Zmienna określająca położenie na osi OY obiektu który nie zmienia położenia, jednostką jest piksel </p>
 
 </div>
 </div>

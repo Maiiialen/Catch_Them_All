@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Owoc Class Reference</title>
+<title>Catch Them All: Owoc Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="paws.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Catch Them All
    </div>
   </td>
  </tr>
@@ -120,8 +121,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7e4e6bc707dc8fb1122663f621966190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy.  <a href="class_owoc.html#a7e4e6bc707dc8fb1122663f621966190">More...</a><br /></td></tr>
 <tr class="separator:a7e4e6bc707dc8fb1122663f621966190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada673bb161b7f19ce00b0cd86078996e"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_owoc.html#ada673bb161b7f19ce00b0cd86078996e">boundingRect</a> () const override</td></tr>
+<tr class="memdesc:ada673bb161b7f19ce00b0cd86078996e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy prostokąt ograniczjący obiekt.  <a href="class_owoc.html#ada673bb161b7f19ce00b0cd86078996e">More...</a><br /></td></tr>
 <tr class="separator:ada673bb161b7f19ce00b0cd86078996e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f0a2dedc5ff5907f20616a9aefc5c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_owoc.html#a28f0a2dedc5ff5907f20616a9aefc5c9">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget=nullptr) override</td></tr>
+<tr class="memdesc:a28f0a2dedc5ff5907f20616a9aefc5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rysująca obiekt na ekranie.  <a href="class_owoc.html#a28f0a2dedc5ff5907f20616a9aefc5c9">More...</a><br /></td></tr>
 <tr class="separator:a28f0a2dedc5ff5907f20616a9aefc5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a319966865aafb993bd2cb3da7c1fe30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_owoc.html#a319966865aafb993bd2cb3da7c1fe30a">boom</a> ()</td></tr>
 <tr class="memdesc:a319966865aafb993bd2cb3da7c1fe30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obsługująca zderzenie.  <a href="class_owoc.html#a319966865aafb993bd2cb3da7c1fe30a">More...</a><br /></td></tr>
@@ -203,7 +206,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Konstruktor klasy. </p>
-<p>Funkcja inicjalizuje zmienne </p>
+<p>Funkcja inicjalizuje zmienne </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*_scena</td><td>- wskaźnik na scenę, na której ma pojawić się obiekt </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*gr</td><td>- wskaźnik na obiekt gracza </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,7 +242,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Funkcja aktualizująca dane w obiekcie. </p>
-<p>Funkcja aktualizująca dane w obiekcie z częstotliwością zmiennej czasowe z którą jest połączona </p>
+<p>Funkcja aktualizująca dane w obiekcie z częstotliwością zmiennej czasowe z którą jest połączona </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">phase</td><td>- faza aktualizacji </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -263,7 +277,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Funkcja obsługująca zderzenie. </p>
-<p>Funkcja obsługująca zderzenie </p>
+<p>Funkcja obsługująca zderzenie w obiekcie owoc </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -299,6 +313,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Tworzy prostokąt ograniczjący obiekt. </p>
+<p>Funkcja inicjalizuje prostokąd ograniczjący obiekt. </p>
+
 </div>
 </div>
 <a id="ac70c26dda0d3c1d2fe9881a27b1c30b1"></a>
@@ -318,7 +335,7 @@ Here is the caller graph for this function:</div>
 
 <p>Funkcja zwracająca informację czy doszło do zdrrzenia. </p>
 <p>Funkcja zwracająca wartość zmiennej przechowującej informację czy doszło do zderzenie</p>
-<dl class="section return"><dt>Returns</dt><dd>Informacja czy doszło do zderzenie </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Informacja czy doszło do zderzenia </dd></dl>
 
 </div>
 </div>
@@ -362,6 +379,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Funkcja rysująca obiekt na ekranie. </p>
+<p>Nieużywana funkcja rysujaca obiekt na ekranie </p>
+
 </div>
 </div>
 <a id="a279aa6845e452fbe7a2e18960b7cdcdf"></a>
@@ -381,7 +401,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Funkcja ustawiajaca zmienną </p>
-<p>Funkcja ustawiajaca zmienną na nową wartość </p>
+<p>Funkcja ustawiajaca zmienną na nową wartość </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">zd</td><td>- zaktualizowanie wartości oznaczającej czy doszło do zderzenia </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -532,7 +557,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Zmienna określająca prędkość obiektu. </p>
-<p>Zmienna określająca preędkość obiektu, która może się zmieniać </p>
+<p>Zmienna określająca preędkość obiektu, która może się zmieniać, jednostką jest piksel na sekundę </p>
 
 </div>
 </div>
@@ -582,7 +607,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Zmienna zliczająca czas do następnego etapu animacji. </p>
-<p>Zmienna zliczająca czas do następnego etapu animacji </p>
+<p>Zmienna zliczająca czas do następnego etapu animacji, są 4 etapy rozpadu w animacji </p>
 
 </div>
 </div>
@@ -607,7 +632,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Zmienna określająca położenie na osi OX. </p>
-<p>Zmienna określająca położenie na osi OX obiektu który nie zmienia położenia </p>
+<p>Zmienna określająca położenie na osi OX obiektu który nie zmienia położenia, jednostką jest piksel </p>
 
 </div>
 </div>
@@ -632,7 +657,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Zmienna określająca położenie na osi OY. </p>
-<p>Zmienna określająca położenie na osi OY obiektu który nie zmienia położenia </p>
+<p>Zmienna określająca położenie na osi OY obiektu który nie zmienia położenia, jednostką jest piksel </p>
 
 </div>
 </div>
@@ -657,7 +682,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Zmienna określająca czy doszło już do zderzenia. </p>
-<p>Zmienna określająca czy doszło już do zderzenia, jeśli nie naliczan są punkty i zmieniany wygląd, jeśli tak następuje dalsza zmiana wyglądu </p>
+<p>Zmienna określająca czy doszło już do zderzenia, jeśli nie naliczan są punkty i zmieniany wygląd, jeśli tak następuje dalsza zmiana wyglądu, przyjmuje wartości 0 lub 1 </p>
 
 </div>
 </div>
