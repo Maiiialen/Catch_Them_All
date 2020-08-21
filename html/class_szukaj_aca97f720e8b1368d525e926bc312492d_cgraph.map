@@ -1,4 +1,0 @@
-<map id="Szukaj::on_pushButtonRozlacz_clicked" name="Szukaj::on_pushButtonRozlacz_clicked">
-<area shape="rect" id="node1" title="Funkcja obsługująca wciśnięcie przycisku ,,Rozłącz&#39;&#39;." alt="" coords="5,5,209,47"/>
-<area shape="rect" id="node2" href="$class_szukaj.html#a8da84e52e9d0c5ad2719f47cd517a4b7" title="Funkcja obsługująca wypisywanie w logu." alt="" coords="257,13,391,39"/>
-</map>

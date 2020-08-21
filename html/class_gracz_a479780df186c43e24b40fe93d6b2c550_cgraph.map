@@ -1,5 +1,0 @@
-<map id="Gracz::advance" name="Gracz::advance">
-<area shape="rect" id="node1" title="Funkcja aktualizująca dane w obiekcie." alt="" coords="5,31,117,57"/>
-<area shape="rect" id="node2" href="$class_gracz.html#ae143e43458f893500347870e01f64760" title="Funkcja ustawiająca wartość chwilowej prędkości." alt="" coords="165,5,304,32"/>
-<area shape="rect" id="node3" href="$class_gracz.html#ad6d966149d5608cf39c8d867d21ad793" title="Funkcja ustawiająca współrzędną OX." alt="" coords="189,56,281,83"/>
-</map>

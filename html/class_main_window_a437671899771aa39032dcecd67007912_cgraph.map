@@ -1,5 +1,0 @@
-<map id="MainWindow::koniecGry" name="MainWindow::koniecGry">
-<area shape="rect" id="node1" title="Funkcja obsługująca zakończenie gry." alt="" coords="5,31,168,57"/>
-<area shape="rect" id="node2" href="$class_gracz.html#aa98493af9f80ea4176b2fc47fe368d99" title="Funkcja zwracająca ilość zdobytych punktów." alt="" coords="216,5,340,32"/>
-<area shape="rect" id="node3" href="$class_wynik.html#a92bdad02650e56b99a6453cb7334b545" title="Funkcja uaktualniająca zmienną" alt="" coords="217,56,339,83"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="Gracz::getPunkty" name="Gracz::getPunkty">
-<area shape="rect" id="node1" title="Funkcja zwracająca ilość zdobytych punktów." alt="" coords="465,42,589,69"/>
-<area shape="rect" id="node2" href="$class_main_window.html#ae8462687b37c805969336c0a5b400e1a" title="Funkcja obsługująca zapisywanie punktów." alt="" coords="244,5,417,47"/>
-<area shape="rect" id="node4" href="$class_main_window.html#a437671899771aa39032dcecd67007912" title="Funkcja obsługująca zakończenie gry." alt="" coords="249,71,412,98"/>
-<area shape="rect" id="node3" href="$class_main_window.html#ab8b37fd5ab268f22808e1b82c72aa56c" title="Funkcja obsługująca wciśnięcie przycisku ,,Start Gry&#39;&#39;." alt="" coords="5,35,196,76"/>
-</map>
