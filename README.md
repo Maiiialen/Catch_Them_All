@@ -14,5 +14,7 @@ On the right of the application window is shown graph when the controller is con
 
 The player is on bottom of game window and is presented as paws with plane. Moving the player is possible by tilting the controller. A larger deflection angle corresponds to faster moving of player.
 
-The game is about colecting "fruits" thats fall down.
+The game is about colecting "fruits" thats fall down. When fruit is colected it falls apart and falls down faster.
+
+<img src="img/owoceilapki.png" width="350">
 
